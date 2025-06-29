@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design In Tailwind-CSS</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body class="bg-gradient-to-r from-sky-800 to-sky-600 text-white">
+    <div class="min-h-screen px-6 py-3 flex flex-col gap-10 md:px-10 lg:px-16 lg:py-7">
+        <header class="flex justify-between">
+            <a href="#logo" class="flex items-center">
+                <h1 class="text-4xl font-bold">TJ</h1>
+            </a>
+            <ul class=" hidden lg:flex lg:flex-row lg:gap-20 lg:text-lg lg:font-medium items-center">
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Offerings</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <div class=" hidden lg:flex lg:flex-row lg:gap-6 lg:text-lg lg:font-medium">
+                <button class="px-3">Login</button>
+                <button class="bg-purple-900 rounded-md px-3">Register</button>
+            </div>
+            <div class="lg:hidden">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </div>
+        </header>
+        <!--  -->
+        <main class="lg:flex flex-row-reverse">
+            <div class="  flex items-center justify-center lg:flex-1 lg:justify-end">
+                <img src="/public/Assects/wfa.jpg" alt="chumma image"
+                    class="img outline-3 outline-white shadow-2xl shadow-black lg:h-[600px] lg:w-[600px] lg:rounded-full image-tranform">
+            </div>
+            <div class="space-y-6 mt-16 pr-5 lg:flex-1 lg:mt-32  text-tranform">
+                <div class="text-7xl font-bold leading-tight">
+                    <h1>Let's Switch</h1>
+                    <h1>To Remote</h1>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi atque, unde sint eum vero
+                    necessitatibus voluptatibus. Voluptas animi itaque distinctio. Atque repellat iure nisi nemo placeat
+                    distinctio cupiditate, necessitatibus similique ratione laborum libero id beatae optio eum ut?
+                    Sapiente voluptatum, nobis hic pariatur commodi suscipit voluptas tempore itaque corporis.
+                </p>
+                <form action="#" class="flex flex-col gap-4 md:flex-row md:gap-0 ">
+                    <input type="text" placeholder="Enter City" class="bg-white placeholder-gray-600 border border-white 
+                        max-md:rounded-md  md:rounded-l-md  px-4 py-3 text-black 
+                        outline-none md:w-80" />
+                    <button
+                        class="font-medium bg-purple-900 px-4 py-3  max-md:rounded-md whitespace-nowrap md:rounded-r-md">Find
+                        Your Office</button>
+
+                </form>
+                <div class="flex flex-col gap-4 py-6">
+                    <p class="font-semibold ">
+                        Used by these companies:
+                    </p>
+                    <ul class="flex flex-row gap-x-4">
+                        <li><i class="fa-brands fa-instagram fa-2x"></i></li>
+                        <li><i class="fa-brands fa-x-twitter fa-2x"></i></li>
+                        <li><i class="fa-brands fa-facebook fa-2x"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+     <script>
+        const scroll = ScrollReveal({
+            reset: true,
+            duration:2600,
+            distance:'60px'
+        })
+        scroll.reveal('.image-tranform', {delay:400, origin:'top'})
+        scroll.reveal('.text-tranform', {delay:300, origin:'left'})
+    </script>
+</body>
+
+</html>

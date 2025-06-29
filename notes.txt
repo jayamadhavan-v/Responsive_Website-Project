@@ -1,0 +1,23 @@
+Installation OfThe Tailwind CSS in Local Machine
+ctrl + shift + ` To Open The Terminal
+enter
+npm init And Click Enter BUtton
+package.json Will Be Created in the Folder
+enter 
+npm install tailwindcss @tailwindcss/cli
+node_modules And package-lock.json has Be Created 
+
+create THe Src Folder
+Inside Of The Src Folder Create Css File 
+Then paste This 
+@import "tailwindcss";
+then enter
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+
+then Link the Output.css into the html file 
+
+
+gradient design from https://hypercolor.dev/
+bar-icons from https://fontawesome.com/icons
+cdn link from fontawesome https://cdnjs.com/libraries/font-awesome 
+https://scrollrevealjs.org/api/reset.html

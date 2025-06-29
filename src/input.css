@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.img {
+    apply([outline-3 outline-white shadow-2xl shadow-black lg:h-[600px] lg:w-[600px] lg:rounded-full image-tranform]);
+}
